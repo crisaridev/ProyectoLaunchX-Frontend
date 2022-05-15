@@ -35,13 +35,15 @@ a:hover{
 
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   height: 180px;
   padding: 10px 200px;
   background-color: var(--white20);
 }
-
 header nav{
   height: 180px;
   padding: 60px 0;
@@ -65,12 +67,12 @@ nav ul li{
 h1 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
-  font-size: 4.8em;
+  font-size: 4.8rem;
   text-align: center;
   margin-bottom: 60px;
 }
 p {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 49px;
 }
@@ -84,7 +86,7 @@ p {
 }
 
 h2 {
-  font-size: 3.6em;
+  font-size: 3.6rem;
   font-weight: 300;
   text-align: center;
   padding-top: 40px;
