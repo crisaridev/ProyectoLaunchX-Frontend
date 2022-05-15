@@ -14,10 +14,13 @@ html {
     --white10: #2A2D2E;
     --blue: #83CDD1;
     --yellow:#D6A90B;
+    --orange: #DA7015;
+    --blue-input: #f3f3f66c;
   }
   
 body {
     margin: 0;
+    padding: 0 ;
     background-color: var(--background-main);
     font-family: 'Noto Sans', sans-serif;
     font-size: 2rem;
@@ -59,5 +62,107 @@ nav ul li{
     margin-left: 200px;
 }
 
-
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
   
+
+
+.wrapper .principal {
+    padding: 0 200px;
+    margin-bottom: 60px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.wrapper h3{
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.wrapper .denuncia{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    width: 100%; 
+    background-color: var(--blue);
+}
+
+.denuncia h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 3.8rem;
+    text-align: center;
+  
+}
+.denuncia form{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 15px 20px;
+    width: 380px;
+    margin: 15px 0;
+    background-color: var(--blue-input);
+    border: none;
+    border-radius: 9px;
+    color: var(--white10);
+    font-size: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: var(--white20);
+}
+.denuncia .name{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.denuncia .email{
+    width: 823px;
+}
+.denuncia textarea{
+    padding: 15px 20px;
+    width: 100%;
+    margin: 15px 0;
+    background-color: var(--blue-input);
+    border: none;
+    border-radius: 9px;
+    font-size: 2rem;
+    color: var(--white10);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.denuncia textarea::placeholder{
+    color: var(--white20);
+}
+textarea:focus{
+    outline: none;
+}
+
+button {
+    padding: 10px 0;
+    width: 200px;
+    font-weight: 500;
+    font-size: 2.8rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--white10);
+    background-color: var(--orange);
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: var(--yellow);
+    cursor: pointer;
+}
